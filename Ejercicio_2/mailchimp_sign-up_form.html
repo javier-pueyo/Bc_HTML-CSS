@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp sign-up form</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" media="all" />
+    <!-- end -- Normalize CSS -->
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/87293197e8.js" crossorigin="anonymous"></script>
+    <!-- end -- Fontawesome -->
+</head>
+<body>
+    <main>
+        <div>
+            <img width="200" src="./assets/img/mailchip_logo.svg" alt="mailchimp logo">
+        </div>
+        <div>
+            <h1>Welcome to Mailchimp</h1>
+            <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="/log-in.html">Log in</a></p>
+            <form action="https://reqres.in/api/users" method="post">
+                <label for="signEmail">Email</label>
+                <input 
+                    type="email"
+                    name="user_email"
+                    id="signEmail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                    required
+                />
+                <label for="signNameUser">Username</label>
+                <input 
+                    type="text" 
+                    name="user_name" 
+                    id="signNameUser"
+                    required
+                />
+                <label for="signPsw">Password</label>
+                <a id="pswShow" href="#"><span class="fa-solid fa-eye"></span> Show</a>
+                <input 
+                    type="password"
+                    name="user_psw"
+                    id="signPsw"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                    title="Please include minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character."
+                    required
+                />
+                <ul style="columns: 2;">
+                    <li>One lowercase character</li>
+                    <li>One special character</li>
+                    <li>8 characters minimum</li>
+                    <li>One uppercase character</li>
+                    <li>One number</li>
+                </ul>
+                <button type="submit">Sign Up</button>
+                <input 
+                    type="checkbox"
+                    name="user_newsletter"
+                    id="signCheck"
+                    required
+                />
+                <label for="signCheck">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
+            </form>
+            <p>By clicking the "Sign Up' button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="/terms.html">Terms of Use</a>  and <a href="/privacy.html">Privacy Policy.</a>  </p>
+        </div>
+
+</main>
+</html>

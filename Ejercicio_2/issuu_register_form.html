@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issu Register Form</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" media="all" />
+    <!-- end -- Normalize CSS -->
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/87293197e8.js" crossorigin="anonymous"></script>
+    <!-- end -- Fontawesome -->
+</head>
+<body>
+    <header>
+        <img width="80" src="./assets/img/issuu_logo.svg" alt="logotipo de issuu">
+        <div>
+            <p>Already a user?</p>
+            <p><a href="/sign-in.html">Sign in</a></p>
+        </div>
+    </header>
+    <main>
+        <h1>Create an Issuu Account.</h1>
+        <form action="https://reqres.in/api/users" method="post">
+            <fieldset>
+                <button id="signInGoogle">
+                    <img width="24px" src="./assets/img/google.svg" alt="Google logotipo">
+                    Sign in with Google
+                </button>
+                <button id="signInFacebook">
+                    <img width="24px" src="./assets/img/facebook.svg" alt="Google logotipo">
+                    Continue with Facebook
+                </button>
+            </fieldset>
+            <fieldset>
+                <legend>or with email</legend>
+                <label for="signEmail">Email</label>
+                <input
+                    type="email"
+                    id="signEmail"
+                    name="user_email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                    placeholder="e.g. john.doe@email.com"
+                    required
+                />
+                <label for="signPwd">Password</label>
+                <input
+                    type="password"
+                    id="signPwd"
+                    name="user_password"
+                    pattern="[A-Za-z0-9]"
+                    required
+                />
+                <input   
+                    id="signCheck" 
+                    type="checkbox" 
+                    required
+                />
+                <label for="signCheck">
+                    I accept the <a href="/terms.html" target="_blank" rel="noopener noreferrer">Terms of Service</a> and the <a href="/terms_professional.html" target="_blank" rel="noopener noreferrer">Professional Terms of Services</a>.
+                </label>
+                <button type="submit">Create Account</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Issuu Inc.</p>
+        <ul>
+            <li>
+                <a href="/terms.html" target="_blank" rel="noopener noreferrer">Terms</a>
+            </li>
+            <li>
+                <a href="/Privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+            </li>
+            <li>
+                <a href="/CMCA.html" target="_blank" rel="noopener noreferrer">DMCA</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

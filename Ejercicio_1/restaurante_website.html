@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- end -- Required meta tags -->
+        <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/img/favicon-16x16.png"
+        />
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="./assets/css/normalize.css" type="text/css" media="all" />
+        <!-- end -- Normalize CSS -->
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/87293197e8.js" crossorigin="anonymous"></script>
+        <!-- end -- Fontawesome -->
+        <title>Home | Mozzar Bar</title>
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="container"> <!-- container para limitar el ancho (max-width) del contenido-->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/mozza-bar_logotipo.jpg" width="100px" alt="logotipo mozza bar"/>
+                </a>
+                <button class="navbar-toggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="navbarNavDropdown" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#concepto">Concepto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fotos">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reserva">Reservas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="home" class="container-fluid hero__section">
+                <img width="1920px" class="hero__bg" src="./assets/img/mozza-bar_portada.jpg" alt="portada Mozzar Bar" />
+                <h1 class="hero__title">Mozza Bar</h1>
+            </section>
+            <section id="concepto">
+                <div class="concepto__container">
+                    <h2>Concepto</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus debitis animi accusamus inventore minima sapiente, officia ut obcaecati libero quidem voluptas exercitationem beatae accusantium quisquam corrupti nemo quod consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus debitis animi accusamus inventore minima sapiente, officia ut obcaecati libero quidem voluptas exercitationem beatae accusantium quisquam corrupti nemo quod consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus debitis animi accusamus inventore minima sapiente, officia ut obcaecati libero quidem voluptas exercitationem beatae accusantium quisquam corrupti nemo quod consequatur.</p>
+                </div>
+            </section>
+            <section id="fotos">
+                <div class="container">
+                    <div class="row"> <!-- class container & row en diferentes divs para evitar conflictos de padding o margin-->
+                        <div class="col-md-4"><!-- Las imágenes del resto del documento ya no las añadí /img, ya que se trata de un ejercicio de solamente html -->
+                            <img width="500" src="./assets/img/galeria-1.jpg" alt="estanteria con cervezas de marca">
+                            <img width="500" src="./assets/img/galeria-2.jpg" alt="objecto artesanl con forma de elefante">
+                        </div>
+                        <div class="col-md-4">
+                            <img width="500" src="./assets/img/galeria-3.jpg" alt="vidriera de Mozza bar">
+                            <img width="500" src="./assets/img/galeria-4.jpg" alt="barra de Mozza bar con cerveza, licores y pasteles">
+                            <img width="500" src="./assets/img/galeria-5.jpg" alt="zona ecofriendly">
+                        </div>
+                        <div class="col-md-4">
+                            <img width="500" src="./assets/img/galeria-6.jpg" alt="zona de mesas donde se come">
+                            <img width="500" src="./assets/img/galeria-7.jpg" alt="estaneria y mesa de Mozza Bar">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="menu" class="container">
+                <h2>Carta</h2>
+                <ul class="nav nav-tabs" id="cartaTab" role="tablist">
+                    <li id="tab-desayuno" class="nav-item" role="tab">
+                        <a class="nav-link active" aria-selected="true" href="#">Desayunos</a>
+                    </li>
+                    <li id="tab-carta" class="nav-item" role="tab">
+                        <a class="nav-link" href="#">Carta</a>
+                    </li>
+                    <li id="tab-cocktail" class="nav-item" role="tab">
+                        <a class="nav-link" href="#">Cocktails</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="panel-desayuno" role="tabpanel" aria-labelledby="tab-desayuno">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table>
+                                <tr>
+                                    <th>Dulces</th>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Dulces</th>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table>
+                                <tr>
+                                    <th>Dulces</th>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <th>Dulces</th>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur</td>
+                                    <td>0.00</td>                                                                                               
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-primary" href="./assets/img/carta-desayunos.pdf" target="_blank" role="button">Ver la carta de desayunos</a>
+            </section>
+            <section id="reserva">
+                <div class="container">
+                    <h2>Reservas</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form action="https://reqres.in/api/users" method="post">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="Personas">Personas</label>
+                                        <select class="form-control" id="Personas" name="reservaPers">
+                                            <option value="1Pers">1</option>
+                                            <option value="2Pers">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="Hora">Hora</label>
+                                        <select class="form-control" id="Hora" name="reservaHora">
+                                            <option selected disabled>Seleccione una hora</option>
+                                            <option value="12Hora">12:00</option>
+                                            <option value="13Hora">13:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="Mesa">Tipo de mesa</label>
+                                        <select class="form-control" id="Hora" name="reservaMesa">
+                                            <option selected disabled>Seleccione el tipo de mesa</option>
+                                            <option value="grandeMesa">Grande</option>
+                                            <option value="pequenaMesa">Mediana</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-form">Reservar</button>
+                                </div>
+                            </form>
+                            <p>Si no encuentra disponibilidad, apúntate en la lista de espera.</p>
+                            <a href="/lista-espera.html" class="btn btn-form" role="button">Lista de espera</a>
+                            <a href="/solicitud-grupo.html" class="btn btn-form" role="button">Solicitud de grupo</a>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="reserva__title-1">Mozzabar</p>
+                            <p class="reserva__title-2">Food & Drinks</p>
+                            <hr>
+                            <p>Conde de Peñalver 64</p>
+                            <p>25006 - Madrid</p>
+                            <p>Abrimos de lunes a domingo</p>
+                            <p>de 07:30 a 01:30</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <div class="row">
+                    <article id="article2" class="col-md-4 card">
+                        <a href="/blog/article-1.html">
+                            <div class="card__tag">Mozzar Bar</div>
+                            <div class="card__content">
+                                <p class="card__date">03/06/2024</p>
+                                <h3>Mozzar Bar abre nueva terraza de verano en mombay lunge</h3>
+                                <p class="card__excerpt">Este viernes 6 de Junio Mozzar Bar estrena una nueva terrazza.</p>
+                            </div>
+                            <div class="card__personal-bar">
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-user"></span> <span id="user">admin</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-comment"></span> <span id="comment">0</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-heart"></span> <span id="love">1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article id="article2" class="col-md-4 card">
+                        <a href="/blog/article-2.html">
+                            <div class="card__tag">Mozzar Bar</div>
+                            <div class="card__content">
+                                <p class="card__date">03/06/2024</p>
+                                <h3>Mozzar Bar abre nueva terraza de verano en mombay lunge</h3>
+                                <p class="card__excerpt">Este viernes 6 de Junio Mozzar Bar estrena una nueva terrazza.</p>
+                            </div>
+                            <div class="card__personal-bar">
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-user"></span> <span id="user">admin</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-comment"></span> <span id="comment">0</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-heart"></span> <span id="love">1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article id="article2" class="col-md-4 card">
+                        <a href="/blog/article-3.html">
+                            <div class="card__tag">Mozzar Bar</div>
+                            <div class="card__content">
+                                <p class="card__date">03/06/2024</p>
+                                <h3>Mozzar Bar abre nueva terraza de verano en mombay lunge</h3>
+                                <p class="card__excerpt">Este viernes 6 de Junio Mozzar Bar estrena una nueva terrazza.</p>
+                            </div>
+                            <div class="card__personal-bar">
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-user"></span> <span id="user">admin</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-comment"></span> <span id="comment">0</span>
+                                </div>
+                                <div class="personal-bar__user">
+                                    <span class="fa-solid fa-heart"></span> <span id="love">1</span>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+                <a href="/blog.html" class="btn btn-primary" role="button">Ver todas las entradas</a>
+            </section>
+            <section id="contacto">
+                <div class="container">
+                    <img src="./assets/img/mozza-bar_logotipo.jpg" width="100px" alt="logotipo mozza bar"/>
+                    <p class="title--enfasi">Ven cuando quieras</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="contacto__img" src="./assets/img/contact-map.png" alt="dirección del bar">
+                            <p>C/ Conde de Peñalver 64</p>
+                            <p>28006 - Madrid</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="contacto__img" src="./assets/img/contact-map.png" alt="dirección del bar">
+                            <p><a href="tel:+34910258237">910 258 351</a></p>
+                        </div>
+                        <div class="col-4">
+                            <img class="contacto__img" src="./assets/img/contact-map.png" alt="dirección del bar">
+                            <p><a href="mailto:hola@mozzabar.es">hola@mozzabar.es</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="follow__container">
+                <h2>Síguenos</h2>
+                <a class="btn btn-primary-outline" href="https://www.facebook.com/restaurantemozzamadrid/" target="_blank"></a>
+                <a class="btn btn-primary-outline" href="https://www.instagram.com/mozza_bar/" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer__pre-bar row">
+                    <div class="col-md-4">
+                        <p><strong>Enlaces de interés</strong></p>
+                        <p><a href="/aviso-legal.html" target="_blank">Aviso legales</a></p>
+                        <p><a href="/cookies.html" target="_blank">Cookies</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Horarios</strong></p>
+                        <p>Lunes a Domingo</p>
+                        <p>00:00 - 00:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p><strong>Contacto</strong></p>
+                        <p>C/ Calle 64</p>
+                        <p>08030 - Madrid</p>
+                        <p><a href="tel:+34910258327">910 258 327</a></p>
+                        <p><a href="mailto:hola@email.com">hola@email.com</a></p>
+                    </div>
+                </div>
+                <div class="footer__copyright-bar">
+                    <div>
+                        <p>2017. Todos los derechos reservados</p></div>
+                    <div>
+                        <span class="fa-brands fa-facebook-f"></span>
+                        <span class="fa-brands fa-instagram"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
