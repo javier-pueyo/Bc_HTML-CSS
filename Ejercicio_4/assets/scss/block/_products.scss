@@ -1,0 +1,27 @@
+.product{
+    margin-bottom: $spacers-container-xxl;
+    & h2 {
+        color: $color-lightGrey;
+        padding: $spacers-l $spacers-xl;
+        border-bottom: 1px solid $color-line;
+        display: inline-block;
+    }
+    &__name {
+        @extend .base-h3;
+        margin-bottom: $spacers-s;
+    }
+    &__price {
+        color: $color-lightGrey;
+        font-weight: 700;
+        margin-bottom: $spacers-l;
+    }
+    &__info {
+        margin-left: $spacers-m;
+        padding: 0 3px;
+        border: 1px solid $color-line;
+        border-radius: 50%;
+        & span {
+            @extend .base-button;
+        }
+    }
+}

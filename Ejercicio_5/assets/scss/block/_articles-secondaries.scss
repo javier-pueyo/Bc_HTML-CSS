@@ -1,0 +1,71 @@
+.articles-secondaries {
+    & .row:first-child {max-width: 1400px;}
+    & .col-third {
+        margin: $gutters;
+        width: calc(100% - #{$gutter-offset});
+        max-width: 440px;
+        display: flex;
+        @include desktop {
+            display: block;
+            width: calc(#{$width-third} - #{$gutter-offset});
+        }
+        & .card {
+            &__header {
+                margin-right: $spacers-l;
+                @include desktop {
+                    margin-right: 0;
+                }
+            }
+            &__title {
+                @include mobile {
+                    margin-top: 0;
+                }
+            }
+            &__tags {
+                @include mobile {
+                    margin-bottom: 0;
+                }  
+            }
+            &__excerpt {
+                display: none;
+                @include desktop {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    & .col-fifth {
+        margin: $gutters;
+        width: calc(#{$width-third} - #{$gutter-offset});
+        @include mobile {
+            &:nth-child(4), &:nth-child(5) {
+                width: calc(#{$width-half} - #{$gutter-offset});
+            }
+            &:nth-child(4) {
+                border-right: 1px solid $color-line;
+            }
+            &:nth-child(4) .card__header, &:nth-child(5) .card__header{
+                aspect-ratio: auto;
+                overflow: initial;
+            }
+            &:nth-child(4) .card__image, &:nth-child(5) .card__image{
+                display: none;
+            }
+            &:nth-child(4) .card__video, &:nth-child(5) .card__video{
+                background: none;
+                padding: 0;
+                bottom: -2.5rem;
+            }
+            &:nth-child(4) .card__header--video ~ .card__body .card__title, &:nth-child(5) .card__header--video ~ .card__body .card__title{
+                margin-left: 1.5rem;
+            }
+            &:nth-child(4) .card__video, &:nth-child(5) .card__video{
+                font-size: 0;
+            }
+        }
+        @include desktop {
+            width: calc(#{$width-fifth} - #{$gutter-offset});
+        }
+    }
+}

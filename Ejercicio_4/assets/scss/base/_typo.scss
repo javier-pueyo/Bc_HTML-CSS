@@ -1,0 +1,95 @@
+// =============================================================================
+// _typo.scss : Default classes for Project
+// MIT License
+// =============================================================================
+
+// =============================================================================
+// _typo.scss settings
+// =============================================================================
+
+
+
+/* Typography */
+
+@font-face{
+  font-family:bmwTypeNextWeb;
+  src: local('bmwTypeNextWeb'),
+  url('/assets/fonts/BMWTypeNext-Light.woff2') format("woff2");
+  font-display:swap;
+  font-weight:300;
+}
+@font-face{
+  font-family:bmwTypeNextWeb;
+  src:url("/assets/fonts/BMWTypeNext-Regular.woff2") format("woff2");
+  font-display:swap;
+  font-weight:400;
+}
+@font-face{
+  font-family:bmwTypeNextWeb;
+  src:url("/assets/fonts/BMWTypeNext-Bold.woff2") format("woff2");
+  font-display:swap;
+  font-weight:700;
+}
+
+body {
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-weight:400;
+  font-family:bmwTypeNextWeb,Arial,Helvetica,sans-serif;
+  color: $color-primary;
+  line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-weight:700;
+}
+
+@mixin base-typo($size, $weight, $spacing) {
+  font-weight: $weight;
+  font-size: #{spToRem($size)}rem;
+  letter-spacing: #{spacing($spacing, remToPx($size))}px;
+}
+// Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+.base-h1, h1 {
+  @include base-typo(48, $font-weight-bold, 0);
+  text-transform: uppercase;
+  margin: $spacers-s;
+}
+.base-h2 {
+  @include base-typo(32, $font-weight-bold, 0);
+  text-transform: uppercase;
+  margin-bottom: $spacers-l;
+}
+.base-h3 {
+  @include base-typo(20, $font-weight-bold, 0);
+}
+.base-subtitle1 {
+  @include base-typo(32, $font-weight-bold, 0);
+  text-transform: uppercase;
+  margin-bottom: $spacers-l;
+}
+.base-subtitle2 {
+  @include base-typo(20, $font-weight-bold, 0);
+}
+.base-subtitle3 {
+  @include base-typo(16, $font-weight-bold, 0);
+}
+.base-body1, body {
+  @include base-typo(14, $font-weight-regular, 0);
+}
+.base-button, button {
+  @include base-typo(16, $font-weight-bold, 0);
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+a:hover {
+  color: $color-link !important;
+}

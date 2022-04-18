@@ -1,0 +1,26 @@
+button {
+    border: none;
+    padding: $spacers-m $spacers-l;
+    margin: 0;
+    background: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:hover, &:focus {
+        background: $color-orange;
+        color: white;
+    }
+
+    &:focus {
+        outline: 1px solid $color-orange;
+        outline-offset: -4px;
+    }
+
+    &:active {
+    }
+}
+

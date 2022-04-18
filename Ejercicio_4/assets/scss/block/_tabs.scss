@@ -1,0 +1,41 @@
+.tabs {
+    position: relative;
+    border-bottom: 1px solid $color-line;
+    &__list {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__item {
+        @extend .base-h3;
+    }
+    &__link {
+        display: inline-block;
+        color: $color-lightGrey;
+        white-space: nowrap;
+        padding: $spacers-m $spacers-xl;
+        &--active {
+            @extend .base-h2;
+            text-transform: capitalize;
+            color: $color-primary;
+            border-bottom: 3px solid $color-link;
+            margin: 0;
+        }
+    }
+    &__control-next {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        right: -1px;
+        top: 0;
+        z-index: 1;
+        padding: $spacers-xl 0 ;
+        height: 100%;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%);
+
+        & span {
+            line-height: 0;
+        }
+    }
+}

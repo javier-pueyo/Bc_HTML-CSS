@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BMW</title>
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/img/favicon-32x32.png"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/scss/main.css" type="text/css" media="all" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/87293197e8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container header">
+        <nav class="navbar" aria-label="primary">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Modelos</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Promociones</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Servicios</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">Universo BMW</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__right">
+            <div class="options">
+                <div class="options__item">
+                    <button><span class="icon-search"><span></button>
+                </div>
+                <div class="options__item">
+                    <button><span class="icon-user"><span></button>
+                </div>
+                <div class="options__item">
+                    <button><span class="icon-dealer-locator"></span></button>
+                </div>
+            </div>
+            <img class="header__logo" width="50" src="./assets/img/BMW_White_Logo.svg" alt="Logotipo de bmw">
+        </div>
+    </header>
+    <main>
+        <section class="container-fluid hero">
+            <img class="hero__bg" src="./assets/img/portada-bmw.jpg" alt="BMW portada">
+            <h1>Tu BMW con disponibilidad inmediata</h1>
+            <p class="base-h2">Vehículos nuevos en stock</p>
+            <a class="btn btn--primary" href="#">Descúbrelo</a>
+        </section>
+        <section class="container product">
+            <h2>Series</h2>
+            <div class="tabs">
+                <ul class="tabs__list" id="cartaTab" role="tablist">
+                    <li id="tab-cabrio" class="tabs__item" role="tab">
+                        <a class="tabs__link tabs__link--active" aria-selected="true" href="#">Cabrio</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Berlina</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Compaco</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Coupé</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">BMW i</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Todocamino</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Touring</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Roadscaster</a>
+                    </li>
+                    <li class="tabs__item" role="tab">
+                        <a class="tabs__link" href="#">Gran Turismo</a>
+                    </li>
+                </ul>
+                <button class="tabs__control-next" aria-label="Siguiente"><span class="icon-arrow-m-right"></span></button>
+            </div>
+            <div class="tab-content" id="panel-cabrio" role="tabpanel" aria-labelledby="tab-cabrio">
+                <div class="row">
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-1.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-2.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-3.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-4.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-5.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-6.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-7.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                    <div class="product__list col-quarter">
+                        <img class="product__img" src="./assets/img/coches/coche-8.webp" alt="">
+                        <h3 class="product__name">BMW Series 2 Cabrio</h3>
+                        <p class="product__price">Desde 39.000 <button class="product__info"><span class="icon-info-i"></span></button></p>
+                        <a class="btn btn--secondary" href="#">Configurar</a>
+                        <a class="btn btn--secondary" href="#">Explorar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row articles">
+                <article class="articles__item col-quarter">
+                    <img width="200" class="articles__img" src="./assets/img/article-1.jpg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <p class="articles__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam illo.</p>
+                    <a class="btn btn--secondary" href="#">Contacta en directo</a>
+                </article>
+                <article class="articles__item col-quarter">
+                    <img width="200" class="articles__img" src="./assets/img/article-2.jpg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <p class="articles__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam illo.</p>
+                    <a class="btn btn--secondary" href="#">Contacta en directo</a>
+                </article>
+                <article class="articles__item col-quarter">
+                    <img width="200" class="articles__img" src="./assets/img/article-3.jpeg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <p class="articles__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="btn btn--secondary" href="#">Contacta en directo</a>
+                </article>
+                <article class="articles__item col-quarter">
+                    <img width="200" class="articles__img" src="./assets/img/article-4.jpg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <p class="articles__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, totam illo.</p>
+                    <a class="btn btn--secondary" href="#">Contacta en directo</a>
+                </article>
+            </div>
+            <div class="row articles">
+                <article class="articles__item col-half">
+                    <img width="200" class="articles__img" src="./assets/img/article-5.jpg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <a class="btn btn--secondary" href="#">Más información</a>
+                </article>
+                <article class="articles__item col-half">
+                    <img width="200" class="articles__img" src="./assets/img/article-6.jpg" alt="">
+                    <h3 class="articles__name">Lorem ipsumm dolot amet</h3>
+                    <a class="btn btn--secondary" href="#">Más información</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <section class="container pre-footer">
+        <div class="row">
+            <div class="col-quarter pre-footer__item">
+                <a class="pre-footer__link" href="#"><span class="icon-configurator"></span>Configurador</a>
+            </div>
+            <div class="col-quarter pre-footer__item">
+                <a class="pre-footer__link" href="#"><span class="icon-electrical-parts-catalogue"></span>Catálogo</a>
+            </div>
+            <div class="col-quarter pre-footer__item">
+                <a class="pre-footer__link" href="#"><span class="icon-request-for-offer"></span>Pide una oferta</a>
+            </div>
+            <div class="col-quarter pre-footer__item">
+                <a class="pre-footer__link" href="#"><span class="icon-request-for-contact"></span>Contacto</a>
+            </div>    
+        </div>
+    </section>
+    <footer>
+        <section class="first-row">
+            <div class="container first-row__content">
+                <div class="first-row__list row">
+                    <div class="col-quarter">
+                        <h3 class="first-row__title">Contacto</h3>
+                        <ul>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-quarter">
+                        <h3 class="first-row__title">Mundo BMW</h3>
+                        <ul>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-quarter">
+                        <h3 class="first-row__title">Gama BMW</h3>
+                        <ul>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-quarter">
+                        <h3 class="first-row__title">Síguenos en</h3>
+                        <ul>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                            <li><a class="first-row__link" href="#">Lorem ipsum</a></li><li><a class="first-row__link" href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="second-row">
+            <div class="container second-row__content">
+                <p>BMW ES 2018</p>
+                <ul>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Políticas de cookies</a></li>
+                    <li><a href="#">Condiciones de USo en RR.SS</a></li>
+                    <li><a href="#">Política de Privacidad RR.SS</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+</body>

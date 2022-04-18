@@ -1,0 +1,12 @@
+.articles  {
+    &__item  {
+    border: 1px solid $color-line;
+    padding: $spacers-l;
+    }
+    &__name {
+        @extend .base-h2;
+        text-transform:none;
+        line-height: 1.1;
+        margin: $spacers-s 0;
+    }
+}

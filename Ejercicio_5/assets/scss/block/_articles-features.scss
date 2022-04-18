@@ -1,0 +1,54 @@
+.articles-feature {
+    max-width: 1400px;
+    & .card {
+        &__header {
+            float: left;
+            width: calc(70% - #{$spacers-xl});
+            margin-right: $spacers-xl;
+            height: 50vh;
+            @include mobile {
+                margin-bottom: $spacers-l;
+            }
+            @include desktop {
+                height: auto;
+                aspect-ratio: 16 / 9;
+            }
+        }
+
+        &__title {
+            @extend .base-h2;
+        }
+        &__body {
+            float: right;
+            width: 30%;
+        }
+        &__footer {
+            clear: both;
+            @include desktop {
+                clear: none;
+                float: right;
+                width: 30%;
+            }
+        }
+        &__key-topics {
+            display: flex;
+            margin: 0;
+            @include desktop {
+                flex-direction: column;
+                margin: 0;
+            }
+        }
+        &__key-topic {
+            margin: 0 $gutters;
+            list-style-type:disc;
+            @include desktop {
+                margin-bottom: $spacers-l;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}

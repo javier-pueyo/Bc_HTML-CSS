@@ -1,0 +1,32 @@
+.product {
+    text-align: center;
+    &__wrapper-img {
+        position: relative;
+        line-height: 0;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__tag {
+        @extend .base-body3;
+        font-weight: $font-weight-bold;
+        left: $spacers-m;
+        bottom: $spacers-m;
+        position: absolute;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: $spacers-s;
+        background: white;
+    }
+    &__name, &__price  {
+        @extend .base-body4;
+        margin: $spacers-m;
+    }
+    &__name {
+        color: $color-grey;
+    }
+    &__price {
+        font-weight: $font-weight-bold;
+    }
+}

@@ -1,0 +1,32 @@
+input {
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0;
+    &:focus {
+        outline: none;
+        outline: 1px solid black;
+    }
+    &::placeholder {
+        color: $color-primary;
+    }
+}
+.input-wrapper {
+    display: inline-block;
+}
+.form {
+    &__search {
+        position: relative;
+            &::before {
+                content: "\f002";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                position: absolute;
+                top: $spacers-m;
+                left: $spacers-s;
+            }
+            & input {
+                padding-left: $spacers-xxl;
+            }
+    }
+}

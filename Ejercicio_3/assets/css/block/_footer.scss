@@ -1,0 +1,19 @@
+.footer-links {
+    & h3 {
+        margin-bottom: $spacers-xxl;
+    }
+    &__list li {
+        @extend .base-body4;
+        margin: $spacers-l 0;
+    }
+    & .fa-brands {
+        margin-right: $spacers-m;
+    } 
+}
+.scroll-auto-up {
+   display: inline-block;
+   position: fixed;
+   bottom: $spacers-l;
+   right: $spacers-l;
+   padding: $spacers-m $spacers-l; 
+}

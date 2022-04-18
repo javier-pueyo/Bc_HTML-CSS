@@ -1,0 +1,27 @@
+.pre-footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & h2 {
+        @extend .base-h3;
+    }
+    &__contacto * {
+        margin: $spacers-m;
+    }
+    & a[href^="mailto:"] {
+        color: $color-blue;
+    }
+}
+
+.newsletter {
+    margin-bottom: $container-padding-y;
+    &__title {
+        @extend .base-h2;
+    }
+    & input {
+        min-width: 600px;
+        padding: $spacers-l;
+        margin: $spacers-l auto;
+        text-align: center;
+    }
+}

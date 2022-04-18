@@ -1,0 +1,20 @@
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: $container-padding-y $container-padding-x;
+    @include mobile {
+        padding: $container-padding-x $spacers-l !important;
+    }
+}
+
+.container {
+    @extend .container-fluid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 #{-($gutters)};
+}

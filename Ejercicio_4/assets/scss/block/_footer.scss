@@ -1,0 +1,26 @@
+.first-row {
+    background-color: $color-offWhite;
+    &__list {
+        border-top: 1px solid $color-line;
+        & li {
+            padding: $spacers-s 0;
+        }
+    }
+    &__link {
+        color: $color-lightGrey;
+    }
+}
+
+.second-row {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    & ul {
+        display: flex;
+    }
+    & li a {
+        margin: 0 $spacers-l;
+        font-weight: 400;
+    }    
+}

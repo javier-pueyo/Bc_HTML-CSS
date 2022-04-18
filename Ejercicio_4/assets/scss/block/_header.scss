@@ -1,0 +1,55 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: stretch;
+    padding-top: $spacers-s;
+    padding-bottom: 0;
+    z-index: 999;
+    border-bottom: 1px solid $color-white;
+    min-height: 100px;
+    
+    & a, & button {
+        color: $color-white;
+        border-bottom: 4px solid transparent;
+
+        &:hover {
+            border-bottom: 4px solid $color-link;
+            color: $color-white !important;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: stretch;
+    }
+    &__logo {
+        max-width: 50px;
+        margin-left: $spacers-l;
+    }
+}
+
+.navbar {
+
+    &__list {
+        display: flex;
+        height: 100%;
+    }
+    &__item {
+        margin: 0 $spacers-l;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: $spacers-l ;
+    }
+}
+
+.options {
+    display: flex;
+    
+    &__item {
+        display: flex;
+    }
+}

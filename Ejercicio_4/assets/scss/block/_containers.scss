@@ -1,0 +1,29 @@
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: $container-padding-y $container-padding-x;
+}
+
+.container {
+    @extend .container-fluid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: $gutters #{-($gutters)};
+}
+.col-sixth {
+    width: calc(#{$width-sixth} - #{$gutter-offset});
+    margin: $gutters;
+}
+.col-half {
+    width: calc(#{$width-half} - #{$gutter-offset});
+    margin: $gutters;
+}
+.col-quarter {
+    width: calc(#{$width-quarter} - #{$gutter-offset});
+    margin: $gutters;
+}

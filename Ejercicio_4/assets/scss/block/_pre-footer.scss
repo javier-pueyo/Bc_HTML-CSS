@@ -1,0 +1,18 @@
+.pre-footer {
+    &__item {
+        background-color: rgb(238, 238, 238);
+    }
+    &__link {
+        display: flex;
+        min-height: $spacers-container-xxl;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $color-lightGrey;
+
+        & span {
+            color: $color-primary;
+        }
+    }
+}

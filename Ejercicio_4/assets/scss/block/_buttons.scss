@@ -1,0 +1,56 @@
+button {
+    border: none;
+    padding: $spacers-m $spacers-l;
+    margin: 0;
+    background: transparent;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+
+    &:hover, &:focus {
+        border: 1px solid $color-lightGrey;
+    }
+
+    &:focus {
+        border: 1px solid $color-lightGrey;
+        outline: 0;
+    }
+
+    &:active {
+    }
+}
+
+.btn {
+    @extend .base-button;
+    &--primary {
+        text-align: center;
+        min-width: 250px;
+        padding: $spacers-l $spacers-xl;
+        background: $color-link;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-lightGrey;
+            color: $color-white !important;
+        }
+    }
+    &--secondary {
+        color: $color-primary;
+        display: block;
+        margin: $spacers-s 0;
+        &::before {
+            font-size: 2.5rem;
+            margin-left: #{-($spacers-l)};
+            margin-right: #{-($spacers-m)};
+            vertical-align: middle;
+            line-height: 0;
+            @extend .icon-bmw;
+            @extend .icon-arrow-m-right;
+        }
+    }
+}
+

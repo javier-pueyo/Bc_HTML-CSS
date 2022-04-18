@@ -1,0 +1,18 @@
+.articles-FA {
+
+    & .col-fifth {
+        margin: $gutters;
+        width: calc(#{$width-third} - #{$gutter-offset});
+        @include mobile {
+            &:nth-child(4) {
+                display: none;
+            }
+            &:nth-child(5) {
+                display: none;
+            }
+        }
+        @include desktop {
+            width: calc(#{$width-fifth} - #{$gutter-offset});
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+.product-menu  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend .base-body4;
+    padding-bottom: 0;
+}
+.options-products {
+    position: absolute;
+    right: $container-padding-x;
+    & button {
+        @extend .base-body4;
+    }
+    
+}
+.breadcrumb {
+    &__list {
+        display: inline-flex;
+    }
+    &__item {
+
+        &::after{
+            content: '>';
+            margin: 0 $spacers-m;
+        }
+        &:last-child::after{
+            content: '';
+            margin: 0;
+        }
+
+        & a {
+            color: $color-grey;          
+        }
+    }
+    
+}
