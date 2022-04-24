@@ -1,0 +1,99 @@
+.header {
+
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-usuario {
+    display: flex;
+    align-items: center;
+
+    @include large-max {
+        display: none;
+    }
+
+    &__agencias {
+        @extend .link-alt;
+        margin: $spacers-s;
+        padding: 0 $spacers-m;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color-line;
+        }
+
+        &--phone {
+            @include base-size(20);
+            display: flex;
+            align-items: center;
+        }
+    }
+    & .icon-phone {
+        @include base-size(30);
+        
+    }
+}
+.header-nav {
+    background: white;
+    border-top: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+
+    .container {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#buttonMegaMenu {
+    background-color: $color-link;
+    padding: 14px 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.6rem;
+
+    .line {
+        display: block;
+        background: white;
+        height: 2px;
+        border-radius: 99px;
+        &--top {
+            margin-top: $spacers-s;
+        }
+        &--middle {
+            margin: 6px 0;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+
+    @include large-max {
+            width: auto;
+            overflow-x: scroll;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        @extend .link-alt;
+        text-transform: uppercase;
+        padding: $spacers-m;
+        border-bottom: 3px solid transparent;
+
+        &--active {
+            border-bottom: 3px solid $color-link;
+            font-weight: 600;
+        }
+    }
+}

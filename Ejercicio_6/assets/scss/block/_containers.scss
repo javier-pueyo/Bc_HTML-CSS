@@ -1,0 +1,91 @@
+main {
+    margin-bottom: $spacers-container-xl;
+}
+.bg-white {
+    background: white;
+}
+
+.pd-y--m {
+    padding-top: $spacers-m;
+    padding-bottom: $spacers-m;
+}
+.pd-y--l {
+    padding-top: $spacers-l;
+    padding-bottom: $spacers-l;
+}
+.pd-y--xl {
+    padding-top: $spacers-xl;
+    padding-bottom: $spacers-xl;
+}
+
+.pd-b--m {
+    padding-bottom: $spacers-m;
+}
+.pd-b--l {
+    padding-bottom: $spacers-l;
+}
+.pd-b--xl {
+    padding-bottom: $spacers-xl;
+}
+
+.pd-t--m {
+    padding-top: $spacers-m;
+}
+.pd-t--l {
+    padding-top: $spacers-l;
+}
+.pd-t--xl {
+    padding-top: $spacers-xl;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: #{-($gutters)};
+}
+
+.container-fluid {
+    position: relative;
+    width: 100%;
+    padding: $container-padding-y $container-padding-x;
+}
+
+.container {
+    @extend .container-fluid;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    & .bg-white {
+        padding: $spacers-l;
+        background-color: white;
+
+        & h2 {
+            margin-top: 0;
+        }
+    }
+}
+
+.col-sixth {
+    width: calc(#{$width-sixth} - #{$gutter-offset});
+    margin: $gutters;
+}
+.col-half {
+    width: calc(#{$width-half} - #{$gutter-offset});
+    margin: $gutters;
+
+    @include mobile {
+        width: calc(100% - #{$gutter-offset});
+    }
+}
+.col-third {
+    width: calc(#{$width-third} - #{$gutter-offset});
+    margin: $gutters;
+
+    @include mobile {
+        width: calc(100% - #{$gutter-offset});
+    }
+}
+.col-quarter {
+    width: calc(#{$width-quarter} - #{$gutter-offset});
+    margin: $gutters;
+}

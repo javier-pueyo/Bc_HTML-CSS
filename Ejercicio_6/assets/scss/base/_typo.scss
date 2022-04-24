@@ -1,0 +1,85 @@
+// =============================================================================
+// _typo.scss : Default classes for Project
+// MIT License
+// =============================================================================
+
+// =============================================================================
+// _typo.scss settings
+// =============================================================================
+
+@font-face{
+  font-family: asap;
+  src:url("/assets/fonts/asap-bold.woff2") format("woff2");
+  font-style:normal;
+  font-weight:700;
+  font-display:block;
+}
+@font-face{
+  font-family: asap;
+  src:url("/assets/fonts/asap-regular.woff2") format("woff2");
+  font-style:normal;
+  font-weight:400;
+  font-display:block;
+}
+@font-face{
+  font-family: asap;
+  src:url("/assets/fonts/asap-semibold.woff2") format("woff2");
+  font-style:normal;
+  font-weight:600;
+  font-display:block;
+}
+
+/* Typography */
+
+// Weights
+$font-weight-semiBold: 600;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+body {
+  text-rendering: optimizeLegibility;
+  font-weight: $font-weight-regular;
+  font-family: asap,Helvetica,sans-serif;
+  color: $color-lightGrey;
+  line-height: $line-height-base;
+  background-color: rgb(243, 243, 243);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: $font-weight-semiBold;
+  color: $color-primary;
+}
+
+.base-h1, h1 {
+  @include base-typo(48, $font-weight-bold, 0);
+  margin: $spacers-s;
+}
+.base-h2 {
+  @include base-typo(32, $font-weight-bold, 0);
+  margin-bottom: $spacers-l;
+}
+.base-h3 {
+  @include base-typo(20, $font-weight-regular, 0);
+}
+.base-body1 {
+  @include base-typo(14, $font-weight-regular, 0);
+}
+.base-button, button {
+  @include base-typo(16, $font-weight-semiBold, 0);
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+}
+a:hover {
+  color: rgba( $color-link, .6 );
+}
+
+.link-alt {
+  color: $color-lightGrey;
+}
+.link-alt:hover {
+  color: rgba( $color-lightGrey, .6 );
+}

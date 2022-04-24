@@ -1,0 +1,74 @@
+@font-face{
+    font-family: iconLine;
+    src:url("/assets/fonts/VECI-1-Lineas.woff") format("woff");
+    font-style:normal;
+    font-weight:300;
+    font-display:block;
+}
+@font-face{
+    font-family: iconProduct;
+    src:url("/assets/fonts/VECI-1-Producto.woff2") format("woff2");
+    font-style:normal;
+    font-weight:300;
+    font-display:block;
+}
+
+.icon-awesome {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.icon-line {
+    font-family: iconLine !important;
+    font-size: 3rem;
+    font-style:normal;
+    font-weight:300;
+    line-height:1;
+}
+
+.featured-cat__link::before {
+    font-family: iconProduct !important;
+    font-size: 3rem;
+    font-style:normal;
+    font-weight:300;
+    line-height:1;
+    font-size: 25px;
+}
+
+.vuelos-baratos::before {
+    content: "1";
+}
+
+.vuelos-hoteles::before {
+    content: "6";
+}
+
+.circuitos::before {
+    content: "%";
+}
+
+.mayores::before {
+    content: "/";
+}
+
+.parques::before {
+    content: "&";
+}
+
+.hora::before {
+    content: "$";
+}
+
+.europa::before {
+    content: "%";
+}
+
+.caribe::before {
+    content: "9";
+
+}
+
+.icon-phone::before {
+    content: "\b7";
+    transform: rotate(14deg);
+}

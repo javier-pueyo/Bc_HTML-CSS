@@ -1,0 +1,67 @@
+.products {
+
+    &__item {
+        background: white;
+    }
+    &__header {
+        position: relative;
+        display: flex;
+    }
+    &__tag {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+
+        @include large-max {
+            transform: translate(-15%, -15%) scale(70%);
+        }
+
+        .tag-name {
+            position: absolute;
+            padding-bottom: $spacers-l;
+            z-index: 1;
+            padding-left: $spacers-l;
+            color: white;
+
+            & b {
+                @include base-typo(32, $font-weight-bold, 0);
+                display: block;
+                line-height: 1;
+            }
+        }
+
+        &::after {
+            content: url('/assets/img/label01.png');
+            transform: translateX(-10%) scale(80%);
+        }
+    }
+
+    &__body {
+        padding: $spacers-xl;
+    }
+    &__title {
+        margin: 0 0 $spacers-s;
+    }
+    &__footer {
+        padding:  $spacers-xl;
+        @include base-flex(flex,space-between,flex-end);
+    }
+    &__price {
+        @include base-typo(40, $font-weight-semiBold, 0);
+        color: $color-link;
+        line-height: 1;
+
+        @include large-max {
+            @include base-size(32);
+        }
+
+        & small {
+            font-size: 0.4em;
+            color: $color-lightGrey;
+            display: block;
+            font-weight: 400;
+        }
+    }
+}

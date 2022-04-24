@@ -1,0 +1,12 @@
+.breadcrumb {
+    display: flex;
+    margin-bottom: $spacers-l;
+    &__item {
+        margin-right: $spacers-m;
+
+        & a::after {
+            padding-left: $spacers-m;
+            content: '>';
+        }
+    }
+}
